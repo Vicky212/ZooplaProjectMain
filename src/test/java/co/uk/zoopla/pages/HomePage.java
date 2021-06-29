@@ -96,7 +96,8 @@ public class HomePage extends BasePage
         priceDrop.click();
     }
 
-    public void selectMinPrice(String minPrice) throws InterruptedException {
+    public void selectMinPrice(String minPrice)
+    {
 
         selectByText(miniPrice, minPrice);
     }
@@ -111,7 +112,7 @@ public class HomePage extends BasePage
         propertyTypeDrop.click();
     }
 
-    public void checkPropertyTypes(String propTypes) throws InterruptedException {
+    public void checkPropertyTypes(String propTypes) {
        // Thread.sleep(3);
 
         for(WebElement element:houSES){

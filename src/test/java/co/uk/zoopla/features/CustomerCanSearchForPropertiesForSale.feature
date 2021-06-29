@@ -20,3 +20,23 @@ Feature: Search
         | London                | 3      | 3      | £300,000 | £500,000 | Farms/Land |
    #     | M45 6TF               | 3      | 3      | £300,000 | £500,000 | Houses     |
    #     | Manchester Piccadilly | 3      | 3      | £300,000 | £500,000 | Houses     |
+
+
+    Scenario Outline: User can search for a property using postcode
+        Given I navigate to Zoopla homepage
+        And I enter search area as "<Search Area>"
+        And I select minimum bed as "<MinBed>"
+        And I select maximum bed "<MaxBed>"
+        And I select minimum price as "<MinPrice>"
+        And I select maximum price as "<MaxPrice>"
+        And I click on "<Property>" as property type
+        And I click on Search button
+        Then search result is displayed
+
+        Examples: Search Test Data
+            | Search Area           | MinBed| MaxBed | MinPrice | MaxPrice | Property   |
+            | M45 6TF               | 4     | 5      | £300,000 | £500,000 | Houses     |
+            | Manchester Piccadilly | 5     | 6      | £300,000 | £500,000 | Flats      |
+
+
+

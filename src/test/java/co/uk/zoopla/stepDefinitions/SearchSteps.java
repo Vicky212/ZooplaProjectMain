@@ -32,12 +32,13 @@ public class SearchSteps extends BasePage
         homePage.selectMinBed(mini);
     }
     @When("I select maximum bed {string}")
-    public void i_select_maximum_bed(String maxi)
+        public void i_select_maximum_bed(String maxi)
     {
         homePage.selectMaxBed(maxi);
     }
     @When("I select minimum price as {string}")
-    public void i_select_minimum_price_as(String minPrice) throws InterruptedException {
+    public void i_select_minimum_price_as(String minPrice)
+    {
         homePage.dropPriceSelector();
         homePage.selectMinPrice(minPrice);
 
@@ -48,7 +49,7 @@ public class SearchSteps extends BasePage
         homePage.selectMaxPrice(maximPrice);
     }
     @When("I click on {string} as property type")
-    public void i_click_on_as_property_type(String propType) throws InterruptedException {
+    public void i_click_on_as_property_type(String propType)  {
         homePage.propertyTypeSelector();
         homePage.checkPropertyTypes(propType);
 
@@ -61,6 +62,21 @@ public class SearchSteps extends BasePage
     @Then("search result is displayed")
     public void search_result_is_displayed()
     {
+
+    }
+
+    @Given("I enter search area as {string}")
+    public void i_enter_search_area_as(String loca)
+    {
+        homePage.enterLocation(loca);
+        /*i_select_minimum_bed_as("3");
+        i_select_maximum_bed("3");
+        i_select_minimum_price_as("£300,000");
+        i_select_maximum_price_as("£500,000");
+        i_click_on_as_property_type("Houses");
+        i_click_on_search_button();
+        *
+         */
 
     }
 
