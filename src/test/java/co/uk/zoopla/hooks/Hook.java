@@ -9,7 +9,7 @@ public class Hook extends BrowserManager
     @Before
     public void setup ()
     {
-        launchBrowser("ChromeHeadless");
+        launchBrowser("Chrome");
     }
 
     @After

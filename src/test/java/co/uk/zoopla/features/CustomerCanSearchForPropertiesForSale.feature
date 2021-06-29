@@ -18,5 +18,5 @@ Feature: Search
         | London                | 3      | 3      | £300,000 | £500,000 | Houses     |
         | London                | 3      | 3      | £300,000 | £500,000 | Flats      |
         | London                | 3      | 3      | £300,000 | £500,000 | Farms/Land |
-        | M45 6TF               | 3      | 3      | £300,000 | £500,000 | Houses     |
-        | Manchester Piccadilly | 3      | 3      | £300,000 | £500,000 | Houses     |
+   #     | M45 6TF               | 3      | 3      | £300,000 | £500,000 | Houses     |
+   #     | Manchester Piccadilly | 3      | 3      | £300,000 | £500,000 | Houses     |
